@@ -1,14 +1,18 @@
 import React, { component } from 'react';
 import p from './Post.module.css';
 
-const Post = () => {
+const Post = (props) => {
+
+
     return (
 
         <div className={p.item}>
-            <img src='https://d5nunyagcicgy.cloudfront.net/external_assets/hero_examples/hair_beach_v391182663/original.jpeg' />
-            post1
+            <div className='flex flex-auto'>
+                <img src='https://d5nunyagcicgy.cloudfront.net/external_assets/hero_examples/hair_beach_v391182663/original.jpeg' />
+                {props.message}
+            </div>
             <div>
-                <span>like</span>
+                <span>👍{props.like}</span>
             </div>
         </div>
 

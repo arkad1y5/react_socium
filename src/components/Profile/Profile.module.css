@@ -3,7 +3,7 @@
   background-color: rgb(132 204 22);
   border-radius: 12px;
   margin: 4px;
-  width: 100%;
+
 
   grid-template-areas:
     "oboi oboi"
@@ -20,11 +20,16 @@
 
 .oboi img {
   border-radius: 12px 12px 0 0;
+  width: 100%;
 }
 
 .ava {
-  width: 60px;
+  width: 110px;
   grid-area: ava;
+}
+
+.ava_and {
+  padding: 10px;
 }
 
 .opis {

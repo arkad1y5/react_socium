@@ -1,13 +1,24 @@
 .nav_content {
   grid-area: n;
-  background-color: rgb(132 204 22);
-  padding: 5px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
   margin: 6px;
-  border-radius: 12px;
-  text-align: center;
+  border-radius: 5px;
+  height: 200px;
 }
 
-.item {
+.item a {
+
+  text-decoration: none;
   color: white;
   font-size: 20px;
+}
+
+.icon_text {
+  padding: 5px 0px;
+  display: inline-flex;
+}
+
+.icon_style {
+  padding-right: 10px;
 }

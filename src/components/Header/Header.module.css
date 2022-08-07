@@ -1,12 +1,23 @@
 .header_content {
-  grid-area: h;
-  background-color: rgb(132 204 22);
-  border-radius: 12px;
-  margin: 4px 0px;
+  width: 100%;
+  position: fixed;
+  /*grid-area: h;*/
+  background-color: rgb(255, 255, 255);
   padding: 5px;
 }
 
 .header_content img {
-  width: 30px;
-  margin-left: 30px;
+  width: 40px;
+  margin-left: 20px;
+}
+
+.header_w {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header_name {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
 }
