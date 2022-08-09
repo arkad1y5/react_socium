@@ -1,0 +1,67 @@
+.oboi {
+  grid-area: oboi;
+}
+
+.oboi img {
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+}
+
+.ava {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px white solid;
+  position: relative;
+  top: -25px;
+}
+
+.ava_item {
+  padding-right: 50px;
+}
+
+.opis_name {
+  font-size: 60px;
+}
+
+.ava_and {
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 150px;
+  align-items: flex-end;
+}
+
+.opis_item {
+  display: flex;
+  align-items: center;
+}
+
+.link_icon {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+  color: rgb(132, 204, 22);
+}
+
+.opis {
+  font-size: 25px;
+  padding: 10px 0px;
+}
+
+.description {
+  border-bottom: 10px solid #b5ffba;
+  padding: 0px 50px;
+}
+
+.static {
+  padding: 30px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.static_line {
+  color: rgb(132, 204, 22);
+  transform: rotate(270deg);
+}

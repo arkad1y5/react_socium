@@ -1,27 +1,36 @@
 import React, { component } from 'react';
+import { NavLink } from 'react-router-dom';
 import d from './Dialogs.module.css';
+
+
+const DialogItem = (props) => {
+
+    let path = "/dialogs/" + props.id;
+
+    return (
+        <div className={d.dialog}>
+            <NavLink to={path}>{props.name}</NavLink>
+        </div>
+    )
+}
+
+const Message = (props) => {
+    return <div className="message">{props.messages}</div>
+}
 
 const Dialogs = (props) => {
     return (
         <div className={d.dialogs}>
             <div className={d.dialogsIitems}>
-                <div className={d.dialog}>
-                    Назарій Підвисоцький
-                </div>
-                <div className={d.dialog}>
-                    Сірожа Семенюк
-                </div>
-                <div className={d.dialog}>
-                    Вова Горобець
-                </div>
-                <div className={d.dialog}>
-                    Ваня Дмитрук
-                </div>
+                <DialogItem id="1" name='Назарій Підвисоцький' />
+                <DialogItem id="2" name='Сірожа Семенюк' />
+                <DialogItem id="3" name='Вова Горобець' />
+                <DialogItem id="4" name='Ваня Дмитрук' />
             </div>
             <div className={d.messages}>
-                <div className="message">Привіт. Як справи?</div>
-                <div className="message">Привіт. Да Джонсонюк Борис танки грис як барбатис. </div>
-                <div className="message">Оу круто</div>
+                <Message messages="Привіт. Як справи?" />
+                <Message messages="Привіт. Да Джонсонюк Борис танки грис як барбатис. " />
+                <Message messages="Оу круто" />
             </div>
         </div>
 

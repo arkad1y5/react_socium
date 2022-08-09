@@ -19,6 +19,10 @@
   display: inline-flex;
 }
 
+.item:hover {
+  background-color: rgba(83, 152, 93, 0.213);
+}
+
 .icon_style {
   padding-right: 10px;
 }

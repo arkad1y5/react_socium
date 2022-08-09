@@ -1,0 +1,44 @@
+.newPost {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  padding: 20px 50px;
+  border-bottom: 10px solid #b5ffba;
+}
+
+.ava_new {
+  padding-right: 40px;
+}
+
+.pole {
+  width: 100vh;
+  height: 60px;
+  border: 3px solid rgb(132, 204, 22);
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.newPost_item {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newPost_icon {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  padding-right: 10px;
+  color: rgb(132, 204, 22);
+}
+
+.button {
+  cursor: pointer;
+  width: 120px;
+  height: 35px;
+  background-color: rgb(132, 204, 22);
+  color: white;
+  border: none;
+  border-radius: 10px;
+}

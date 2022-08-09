@@ -1,37 +1,6 @@
 .content {
-  grid-area: c;
-  background-color: rgb(132 204 22);
+  background-color: white;
   border-radius: 12px;
   margin: 4px;
 
-
-  grid-template-areas:
-    "oboi oboi"
-    "ava opis "
-    "post post";
-
-  grid-template-rows: 60px 1fr;
-  grid-template-columns: 2fr 20fr;
-}
-
-.oboi {
-  grid-area: oboi;
-}
-
-.oboi img {
-  border-radius: 12px 12px 0 0;
-  width: 100%;
-}
-
-.ava {
-  width: 110px;
-  grid-area: ava;
-}
-
-.ava_and {
-  padding: 10px;
-}
-
-.opis {
-  grid-area: opis;
 }
