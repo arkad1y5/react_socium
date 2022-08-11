@@ -1,6 +1,7 @@
 import React, { component } from 'react';
 import p from './Description.module.css';
 import { BsLink45Deg, BsFillPinMapFill, BsFillCalendarEventFill, BsDashLg } from "react-icons/bs";
+import Button from '../../Button/Button';
 
 
 const Opis = (props) => {
@@ -42,6 +43,9 @@ const Description = () => {
                     Задумчивый женский взгляд👁️👁️
                     И мягкость клавиатуры ноотбука💻
                     React Developer👨🏻‍💻
+                </div>
+                <div className={p.button}>
+                    <Button text="Редагувати проіфль" />
                 </div>
                 <div className={p.static}>
                     <Static nameS="Дописів:" numS="25" />

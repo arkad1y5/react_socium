@@ -4,13 +4,21 @@ import p from './MyPost.module.css';
 import Post from './Post/Post';
 
 const MyPost = () => {
+
+    let postData = [
+        { id: 1, message: 'Hi, how are you?', likeCount: 13 },
+        { id: 2, message: 'Hi, my only post.', likeCount: 30 },
+        { id: 2, message: 'Hi, my only post.', likeCount: 30 },
+    ]
+
+    let postElement = postData
+        .map(p => <Post message={p.message} likeCount={p.likeCount} />);
+
     return (
         <div className={p.post}>
             <NewPost />
             <div className={p.post}>
-                <Post message=' Hi, how are you?' like='13' />
-                <Post message=' Hi, my only post.' like='30' />
-
+                {postElement}
             </div>
         </div>
     )

@@ -1,12 +1,9 @@
 import React, { component } from 'react';
 import n from './NewPost.module.css';
 import { BsCamera, BsCaretRightSquare, BsCardImage, BsFileEarmarkMusic, BsFillGeoAltFill, BsGear } from "react-icons/bs";
+import Button from '../../Button/Button';
 
-const Button = (props) => {
-    return <div>
-        <button className={n.button}>{props.text}</button>
-    </div>
-}
+
 
 const NewPost = () => {
     return (
@@ -36,5 +33,6 @@ const NewPost = () => {
 }
 
 export default NewPost;
+
 
 
